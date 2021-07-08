@@ -99,6 +99,16 @@ var WorldScene = new Phaser.Class({
         });
 
         this.physics.add.collider(this.player, obstacles);
+
+        //RESPAWNING
+        this.spawns = this.physics.add.group({ classType: Phaser.GameObjects.Zone });
+        for(var i = 0; i < 30; i++) {
+            var x = Phaser.Math.RND.between(0, this.physics.world.bounds.width);
+            var y = Phaser.Math.RND.between(0, this.physics.world.bounds.height);
+            // parameters are x, y, width, height
+            this.spawns.create(x, y, 20, 20);            
+        }        
+        this.physics.add.overlap(this.player, this.spawns, this.onMeetEnemy, false, this);
     },
     
     update: function(time, delta) {
@@ -148,7 +158,19 @@ var WorldScene = new Phaser.Class({
         {
             this.player.anims.stop();
         }
-    }
+    },
+
+    //meeting enemy battle
+    onMeetEnemy: function(player, zone) {        
+        // we move the zone to some other location
+        zone.x = Phaser.Math.RND.between(0, this.physics.world.bounds.width);
+        zone.y = Phaser.Math.RND.between(0, this.physics.world.bounds.height);
+        
+        // shake the world
+        this.cameras.main.flash(300);
+        
+        // start battle 
+    },
 
 });
  
@@ -162,7 +184,8 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 0 }
+            gravity: { y: 0 },
+            debug: true
         }
     },
     scene: [
