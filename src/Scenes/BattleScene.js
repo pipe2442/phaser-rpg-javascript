@@ -2,11 +2,11 @@ import Phaser from 'phaser';
 import { score } from './GameScene';
 
 let scoreBattle = 0;
-let monster1; let
-  monster2;
+let monster1; 
+let monster2;
 let player;
-let bullets; let
-  bullets2;
+let bullets; 
+let bullets2;
 
 const Unit = new Phaser.Class({
   Extends: Phaser.GameObjects.Sprite,
@@ -39,9 +39,9 @@ const PlayerCharacter = new Phaser.Class({
   initialize:
       function PlayerCharacter(scene, x, y, texture, frame, type, hp, damage) {
         Unit.call(this, scene, x, y, texture, frame, type, hp, damage);
-        this.flipX = true;
+        //this.flipX = true;
 
-        this.setScale(2);
+        //this.setScale(.5);
       },
 });
 
@@ -86,7 +86,8 @@ export default class BattleScene extends Phaser.Scene {
     monster2.setVelocityY(Phaser.Math.Between(50, 200), 5);
 
     // create player
-    player = this.physics.add.sprite(1000, 469, 'girl').setScale(2);
+    player = this.physics.add.sprite(1000, 469, 'girl').setScale(.5);
+    player.flipX = true
     player.setBounce(1);
     player.setCollideWorldBounds(true);
     this.physics.add.collider(player, mud);
