@@ -96,9 +96,11 @@ export class GameScene extends Phaser.Scene {
 
   update() {
     if (this.cursors.left.isDown) {
+      player.flipX = true;
       player.setVelocityX(-200);
       player.anims.play('left', true);
     } else if (this.cursors.right.isDown) {
+      player.flipX = false;
       player.setVelocityX(200);
       player.anims.play('right', true);
     } else {
