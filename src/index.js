@@ -12,7 +12,7 @@ import LeaderboardScene from './Scenes/LeaderboardScene';
 import InstructionScene from './Scenes/InstructionScene';
 import UIScene from './Scenes/UIScene';
 import Model from './Model';
-//import './style.css';
+// import './style.css';
 
 class Game extends Phaser.Game {
   constructor() {

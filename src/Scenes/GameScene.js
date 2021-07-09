@@ -39,7 +39,7 @@ export class GameScene extends Phaser.Scene {
     mud.create(450, 568, 'mud').setScale(2).refreshBody();
 
     // Add player sprite.
-    player = this.physics.add.sprite(100, 450, 'girl').setScale(.5);
+    player = this.physics.add.sprite(100, 450, 'girl').setScale(0.5);
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
     player.body.setGravityY(300);
