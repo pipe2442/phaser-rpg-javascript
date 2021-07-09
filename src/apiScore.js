@@ -1,6 +1,6 @@
 import 'regenerator-runtime/runtime';
 
-const gameID = 'PvttOFDfJUi8zbItrwFO';
+const gameID = '19941024azgmicro';
 const url = 'https://thingproxy.freeboard.io/fetch/https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
 const allScores = async () => {
