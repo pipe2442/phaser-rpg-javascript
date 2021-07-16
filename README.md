@@ -56,6 +56,22 @@ The objective of this project was to build a platform turn-based RPG game and im
 ![screenshot](https://github.com/pipe2442/phaser-rpg-javascript/blob/feature/complete-game/assets/projectscreen.PNG)
 ![screenshot](https://github.com/pipe2442/phaser-rpg-javascript/blob/feature/complete-game/assets/projectscreen2.PNG)
 
+# Game Instructions
+![screenshot](https://github.com/pipe2442/phaser-rpg-javascript/blob/feature/complete-game/assets/gameinstructions.PNG)
+
+## Main Instructions
+1. You should pick as many rupees as you can until de majoras mask appears.
+2. 2. If the masks touch you two dragon would be summoned and you will have to fight them.
+
+## Game Controls
+1. Move Forward = Right Key (Keyboard).
+2. Move Backward = Left Key (Keyboard).
+3. Jump = Up Key (Keyboard).
+
+## Battle Scene(Second Scene)
+1. Select Dragon to Attack = Left Key (Keyboard)
+2. To Attack = Space Bar (Keyboard)
+
 ## Authors
 
 👤 **Luis Felipe Angulo Torres**
