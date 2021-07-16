@@ -51,6 +51,14 @@ The objective of this project was to build a platform turn-based RPG game and im
     npm run build
     ``` 
     to bundle scripts with **_webpack_** a static module bundler for modern JavaScript applications
+    
+## Testing
+
+1. Run tests with the following command:
+    ```bash
+    npm run test
+    ``` 
+
 
 # Project Screenshot
 ![screenshot](https://github.com/pipe2442/phaser-rpg-javascript/blob/feature/complete-game/assets/projectscreen.PNG)
