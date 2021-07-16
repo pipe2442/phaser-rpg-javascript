@@ -46,7 +46,7 @@ export default class InstructionScene extends Phaser.Scene {
     this.title.setOrigin(0.5);
 
     this.battleControl1 = this.add.text(200, 430, '1. Select Dragon to Attack = Left Key (Keyboard)', { fontSize: '18px', fill: '#fff' });
-    this.battleControl1 = this.add.text(200, 460, '1. To Attack = Space Bar (Keyboard)', { fontSize: '18px', fill: '#fff' });
+    this.battleControl1 = this.add.text(200, 460, '2. To Attack = Space Bar (Keyboard)', { fontSize: '18px', fill: '#fff' });
 
     this.menuButton = this.add.sprite(650, 560, 'blueButton1').setInteractive();
     this.menuText = this.add.text(0, 0, 'Menu', { fontSize: '32px', fill: '#fff' });
