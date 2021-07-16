@@ -72,6 +72,11 @@ The objective of this project was to build a platform turn-based RPG game and im
 1. Select Dragon to Attack = Left Key (Keyboard)
 2. To Attack = Space Bar (Keyboard)
 
+## Design Process
+This game was designed on an initial, quite complex, webpack configuration specific for Phaser3. This allowed me to investigate Phaser and its tools from a specific perspective. The entire map was built with Tiled on a 32 x 32 collection of squares. The map then has been exported as a json file and used for placing chests, and monsters at random positions.
+
+The player can move around the map and jump using the arrow keys. The idea is to get as many rupees as possible to get the most points, each time the player gets touched by the enemy he will be spawned at a different scenario and a battle between the player and 2 dragons will begin.
+
 ## Authors
 
 👤 **Luis Felipe Angulo Torres**
