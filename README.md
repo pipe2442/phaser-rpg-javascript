@@ -41,7 +41,9 @@ The objective of this project was to build a platform turn-based RPG game and im
    ```bash
    $ git clone https://github.com/pipe2442/phaser-rpg-javascript.git
    ```
-4. Run `cd phaser-rpg-javascript`
+4. Run ```bash
+       cd phaser-rpg-javascript
+       ```
 5. Install your dependencies 
     ```bash
     $ npm install
@@ -84,6 +86,13 @@ The objective of this project was to build a platform turn-based RPG game and im
 This game was designed on an initial, quite complex, webpack configuration specific for Phaser3. This allowed me to investigate Phaser and its tools from a specific perspective. The entire game was build based on phaser [making your first game tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game/part1) and [Zenva How to Create a Turn-Based RPG in Phaser 3](https://gamedevacademy.org/how-to-create-a-turn-based-rpg-game-in-phaser-3-part-1/) tutorials.
 
 The player can move around the map and jump using the arrow keys. The idea is to get as many rupees as possible to get the most points, each time the player gets touched by the enemy he will be spawned at a different scenario and a battle between the player and 2 dragons will begin.
+
+## Objectives:
+
+- Make a 2 scene game (World & Battle scenes). [Implemented]
+- Each Character must have responsive health bars. [Implemented]
+- Make High Score Board. [Implemented]
+- Make Title and Menu scenes [Implemented]
 
 ## Authors
 
